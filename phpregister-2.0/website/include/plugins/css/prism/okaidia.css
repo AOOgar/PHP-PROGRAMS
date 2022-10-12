@@ -1,0 +1,122 @@
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code.okaidia-block[class*="language-php"],
+pre.okaidia-block[class*="language-php"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre.okaidia-block[class*="language-php"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code.okaidia-block[class*="language-php"],
+pre.okaidia-block[class*="language-php"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code.okaidia-block[class*="language-php"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.language-php .token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.language-php .token.punctuation {
+	color: #f8f8f2;
+}
+
+.language-php .namespace {
+	opacity: .7;
+}
+
+.language-php .token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.language-php .token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.language-php .token.selector,
+.language-php .token.attr-name,
+.language-php .token.string,
+.language-php .token.char,
+.language-php .token.builtin,
+.language-php .token.inserted {
+	color: #a6e22e;
+}
+
+.language-php .token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.language-php .token.atrule,
+.token.attr-value,
+.token.function {
+	color: #e6db74;
+}
+
+.language-php .token.keyword {
+	color: #66d9ef;
+}
+
+.language-php .token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.language-php .token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.language-php .token.italic {
+	font-style: italic;
+}
+
+.language-php .token.entity {
+	cursor: help;
+}

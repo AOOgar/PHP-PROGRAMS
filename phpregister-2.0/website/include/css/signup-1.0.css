@@ -1,0 +1,11 @@
+.form-group {
+    height: 90px;
+}
+
+.form-group.password {
+    height: 110px;
+}
+
+.terms a {
+    text-decoration:underline;
+}

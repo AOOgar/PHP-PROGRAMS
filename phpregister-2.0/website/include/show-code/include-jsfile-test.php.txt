@@ -1,0 +1,1 @@
+$jsFiles = get_jsFiles(['test', 'global']);

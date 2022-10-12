@@ -1,0 +1,9 @@
+.myicons i {
+    font-size:80px;
+}
+
+@media only screen and (max-width : 769px) {
+    .myicons i {
+        font-size:40px;
+    }
+}

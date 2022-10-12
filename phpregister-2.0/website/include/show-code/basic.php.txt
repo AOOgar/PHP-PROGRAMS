@@ -1,0 +1,2 @@
+$configEmail['To'] = 'contact@yourwebsite.com';
+$configEmail['ToName'] = 'John Doe';

@@ -1,0 +1,4 @@
+// Redirect to this page after Login...
+$redirectLink = urlencode(encrypt($_SERVER['REQUEST_URI'], $config['KeyOAuthRedirect']));
+echo '
+<p>You are not connected. Please connect to test this Ajax call.<br> <a href="'.get_URL().'/login/?r='.$redirectLink.'" "><button class="btn btn-mytheme">Login</button></a></p>';

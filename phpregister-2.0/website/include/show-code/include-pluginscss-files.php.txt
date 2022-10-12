@@ -1,0 +1,2 @@
+$cssPlugins = ['prism/prism.css',
+               '//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css'];

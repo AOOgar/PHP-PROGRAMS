@@ -1,0 +1,40 @@
+/**
+ * Name of the function that will be called to create the content HTML of the email.
+ * By default this function is `email_templateBase` and its not usefull to set it 
+ * with this value!
+   $configEmail['Template'] = 'email_templateBase';
+ */
+
+if($_POST['SelectLang'] == NULL) {
+
+    /*
+     * The 3rd argument is `FALSE` not to send an email with the onClick JavaScript event on Translate Id.
+     * This event is displayed in HTML when an Admin active the `Show Translate Ids` from top Menu.
+     */
+    $configEmail['Subject'] = lg('Your account has been created', 'Signup', FALSE);
+    $configEmail['Title'] = lg('NEW AT', NULL, FALSE).' WebsiteName?';
+    $configEmail['box'][0]['Type'] = 'text';
+    $configEmail['box'][0]['Content'] = lg('This account is already activated', 'Log in', FALSE);
+
+    $configEmail['box'][1]['Type'] = 'link';
+    $configEmail['box'][1]['URL'] = get_URL();
+    $configEmail['box'][1]['URLDesc'] = lg('Home', 'Global', FALSE);
+    
+    $configEmail['box'][3]['Type'] = 'text';
+    $configEmail['box'][3]['Content'] = lg('Thank you, <br> The WebsiteName team', 'Global', FALSE);
+
+} else {
+
+    $configEmail['Subject'] = lg('Your account has been created', 'Signup', FALSE, $_POST['SelectLang']);
+    $configEmail['Title'] = lg('NEW AT', NULL, FALSE, $_POST['SelectLang']).' WebsiteName?';
+    $configEmail['box'][0]['Type'] = 'text';
+    $configEmail['box'][0]['Content'] = lg('This account is already activated', 'Log in', FALSE, $_POST['SelectLang']);
+
+    $configEmail['box'][1]['Type'] = 'link';
+    $configEmail['box'][1]['URL'] = get_URL();
+    $configEmail['box'][1]['URLDesc'] = lg('Home', 'Global', FALSE, $_POST['SelectLang']);
+    
+    $configEmail['box'][3]['Type'] = 'text';
+    $configEmail['box'][3]['Content'] = lg('Thank you, <br> The WebsiteName team', 'Global', FALSE, $_POST['SelectLang']);
+
+}

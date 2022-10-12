@@ -1,0 +1,4 @@
+<!-- Css local files -->
+<link href="https://yourwebsite.com/include/css/documentation-1.0.css" rel="stylesheet">
+<link href="https://yourwebsite.com/include/css/navbar-1.0.css" rel="stylesheet">
+<link href="https://yourwebsite.com/include/css/main-1.0.css" rel="stylesheet">

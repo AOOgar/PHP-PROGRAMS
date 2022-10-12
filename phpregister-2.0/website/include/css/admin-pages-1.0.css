@@ -1,0 +1,109 @@
+/**
+ * Home Page
+ */
+.fa-angle-left {
+    transition: all 0.4s ease;    
+}
+
+.fa-angle-left.rotate {
+    transform: rotate(-90deg);
+}
+
+/**
+ * Admin accounts
+ */
+#DivSearch {
+    margin-right:40px;
+}
+
+#search {
+    width:340px;
+}
+
+@media (max-width: 768px) {
+    #search {
+        width:120px;
+    }
+    #DivSearch {
+        margin-right:10px;
+    }
+}
+
+.panel-black {
+    border: 1px solid #593e3b;
+}
+
+.panel-black > .panel-heading {
+    background: #593e3b;
+    border-bottom: 1px solid #593e3b;
+}
+
+.panel-mytheme {
+    border: 1px solid #7FDBFF;
+}
+
+.panel-mytheme > .panel-heading {
+    background: #7FDBFF;
+    border-bottom: 1px solid #7FDBFF;
+    color: #373737;
+}
+
+.value {
+    display:inline-block;
+    background-color: white;
+    border: 1px solid lightgrey;
+    height:30px;
+    padding: 4px 10px;
+    border-radius: 0 4px 4px 0;
+}
+
+tr {
+    20px;
+}
+td {
+    height:20px;
+    padding:0px;
+    margin:0px;
+}
+
+/**
+ * Accounts
+ */
+.tr-odd {
+    background:white !important;
+}
+
+.tr-even {
+    background:#f8f8f8 !important;
+}
+
+.tr-over {
+    background:#e8f6f9 !important;
+}
+/**
+ * Translation Preferences
+ */
+
+.tr-red {
+    background: #dc3545 !important;
+    color: white;
+}
+
+/**
+ * Admin Tickets
+ */
+
+#FormTicketsSearch .dropdown-toggle {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+#searchTicket {
+    width:340px;
+}
+
+@media (max-width: 768px) {
+    #searchTicket {
+        width:120px;
+    }
+}

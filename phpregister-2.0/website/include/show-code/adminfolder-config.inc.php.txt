@@ -1,0 +1,5 @@
+/**
+ *  Admin folder
+ *  Change it for security reasons
+ */
+$config['AdminFolder'] = '_dashboard';

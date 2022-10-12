@@ -1,0 +1,455 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 250px; /* width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Stay on top */
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: margin-left .5s; /* 0.5 second transition effect to slide in the sidenav */
+    color: #e5e5e5;
+    border-right: 3px solid #f8f8f8;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    font-size: 36px;
+    padding-right: 20px;
+    margin-top:-20px;
+}
+
+#SideNavContent {
+    padding-right: 4px;
+    width: 267px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@media (max-width: 800px) {
+    .sidenav {
+        background-image: url(../../include/images/backgrounds/bg_admin-menu.jpg);
+    }
+}
+
+.sidenav h4 {
+    color: #f1f1f1;
+}
+
+/* The navigation menu links */
+.sidenav .dropdown-menu {
+    background: #211b1b;
+    color: white;
+}
+.sidenav .dropdown-menu a:hover {
+    background: #211b1b;
+}
+.sidenav a {
+    border-left: 4px solid transparent;
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #c7c7c7;
+    display: block;
+}
+
+@media (min-width: 800px) {
+    .sidenav a {
+        color: #818181;
+    }
+}
+.sidenav div.phpregister {
+    padding: 30px 0 0 20px;
+}
+
+.sidenav a.phpregister-site {
+    opacity: .5;
+    transition: 0.3s;
+    display: inline;
+}
+
+.sidenav a.phpregister-site:hover {
+    opacity: 1;
+}
+
+.sidenav div.phpregister-notice {
+    opacity: .5;
+    transition: 0.3s;
+    margin-top: -5px;
+    display: inline;
+}
+
+.sidenav div.phpregister-notice:hover {
+    opacity: 1;
+}
+
+.sidenav div.phpregister-notice a {
+    color: #cbcbcb;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* The navigation menu links */
+.sidenav a.active {
+    border-left: 4px solid #f1f1f1;
+    color: #f1f1f1;
+    display: block;
+}
+
+/* The navigation menu links */
+.sidenav li.active {
+    border-left: 4px solid #f1f1f1;
+    color: #f1f1f1;
+    display: block;
+}
+/* The navigation menu links */
+.sidenav span.active {
+    color: #f1f1f1;
+}
+
+/* The navigation menu links */
+.sidenav li a.active {
+    border-left: 0px;
+    color: #f1f1f1;
+    display: block;
+}
+
+.sidenav .translatesids {
+    color: #1d94ff;
+}
+
+.sidenav .translatesids:hover{
+    color: #67b7ff;
+}
+
+.sidenav .backsite {
+    color: #4da74d;
+}
+
+.sidenav .backsite:hover{
+    color: #69d969;
+}
+
+.sidenav .disconnect {
+    color: #e37812;
+}
+
+.sidenav .disconnect:hover{
+    color: #ff991a;
+}
+
+.sidenav ul  {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.sidenav ul li  {
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+.sidenav li .arrow:before {
+    font-size: 1.4em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidenav div .arrow {
+  transition: transform .25s;
+}
+
+.sidenav div.collapsed .arrow {
+  transform: rotate(90deg);
+}
+
+@media (min-width: 800px) {
+    #DivWraper {
+        transition: margin-left 0.3s ease-in; /* 0.2 second transition effect to slide in the sidenav */
+    }
+    #DivWraper.openSidebar {
+        margin-left: 250px;
+  }
+}
+
+#DivOpenSidebar {
+    width:40px;
+    height:45px;
+    position: fixed; /* Stay in place */
+    top: 20px;
+    left: 7px;
+    z-index: 10; /* Stay on top */
+    opacity:0;
+    cursor: pointer;
+    color: white;
+}
+
+#DivOpenSidebar:hover, #DivOpenSidebar:focus {
+    color: #f1f1f1;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 13px;}
+}
+
+.modal-header {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #0480be;
+    color: white;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+/**************************
+    Administration part
+***************************/
+.body-admin {
+    font-size:14px;
+    background-image: url(../../include/images/backgrounds/bg-admin-3.jpg); /* fallback for older browsers */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color : #004fa0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 1s;
+}
+
+.body-admin-pageloaded {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%,rgba(255,255,255,0.3) 100%), url(../../include/images/backgrounds/bg-admin-3.jpg);
+}
+
+#DivPageBorder {
+    max-width:1200px;
+}
+
+.card-green {
+  border-color: #5cb85c;
+}
+.card-green > .card-header {
+  border-color: #5cb85c;
+  color: white;
+  background-color: #5cb85c;
+}
+.card-green > a {
+  color: #5cb85c;
+}
+.card-green > a:hover {
+  color: #3d8b3d;
+}
+
+.card-custom-red {
+    border-color: rgb(197, 88, 88);
+}
+
+.card-custom-red > .card-header {
+    background: rgb(197, 88, 88); 
+    color: #ffffff;
+}
+
+.card-custom-yellow {
+    border-color: rgb(219, 192, 50);
+}
+
+.card-custom-yellow > .card-header {
+    background: rgb(219, 192, 50); 
+    color: rgb(42, 52, 68);
+}
+
+.break-line {
+    word-wrap:break-word; 
+    display:inline-block;
+}
+
+.dl-horizontal dt, dd {
+    white-space: normal;
+    padding: 2px;
+}
+
+dl.inline dd {
+    display: inline;
+    margin: 0;
+    lext
+}
+dl.inline dd:after{
+    display: block;
+    padding: 2px;
+    content: '';
+}
+
+dl.inline dt{
+    vertical-align: top;
+    display: inline-block;
+    min-width: 80px;
+}
+.placeholder {color: #aaa;}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.brd-rad-t-6 {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+.taboption {
+    margin-left: 10px;
+    display:inline-block;
+    padding: 6px 8px;
+    cursor: pointer;
+    vertical-align:-5px;
+    color: #23323f;
+    background: #dfdfdf;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 0px 0px;
+    border-bottom: 0px;
+}
+.taboption.active {
+    vertical-align:-2px;
+    border: 1px solid #bdbdbd;
+    border-bottom: 0px;
+    background:#ffffff;
+    padding: 9px 8px;
+    margin-top: 0px;
+}
+.taboption:not(.active):hover {
+    background: #ffffff;
+}
+
+
+
+/**
+ * Circles Animation!
+ * At bottom of sidenav
+ */
+.circle {
+    z-index:-1;
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: ripple 60s infinite;
+    box-shadow: 0px 0px 1px 0px #508fb9;
+}
+@media screen and (max-height: 900px) {
+    .circle {
+        display: none;
+    }
+}
+.small{
+    width: 350px;
+    height: 350px;
+    left: -175px;
+    bottom: -175px;
+}
+
+.medium{
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+}
+
+.large{
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    bottom: -300px;
+}
+
+.xlarge{
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge{
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1{
+  opacity: 0.2;
+}
+.shade2{
+  opacity: 0.4;
+}
+
+.shade3{
+  opacity: 0.6;
+}
+
+.shade4{
+  opacity: 0.8;
+}
+
+.shade5{
+  opacity: 0.9;
+}
+
+@keyframes ripple{
+  0%{
+    transform: scale(0.4);
+  }
+  
+  50%{
+    transform: scale(0.6);
+  }
+  
+  100%{
+    transform: scale(0.4);
+  }
+}

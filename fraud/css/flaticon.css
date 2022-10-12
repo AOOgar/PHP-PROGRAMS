@@ -1,0 +1,123 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 06/02/2018 14:13
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticond41d.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+font-style: normal;
+}
+
+.flaticon-social:before { content: "\f100"; }
+.flaticon-multimedia:before { content: "\f101"; }
+.flaticon-twitter-logo-silhouette:before { content: "\f102"; }
+.flaticon-twitter-logo-button:before { content: "\f103"; }
+.flaticon-google-plus-logo-button:before { content: "\f104"; }
+.flaticon-youtube:before { content: "\f105"; }
+.flaticon-instagram:before { content: "\f106"; }
+.flaticon-facebook-letter-logo:before { content: "\f107"; }
+.flaticon-email:before { content: "\f108"; }
+.flaticon-envelope:before { content: "\f109"; }
+.flaticon-people-1:before { content: "\f10a"; }
+.flaticon-padlock-unlock:before { content: "\f10b"; }
+.flaticon-shield:before { content: "\f10c"; }
+.flaticon-lock:before { content: "\f10d"; }
+.flaticon-buildings:before { content: "\f10e"; }
+.flaticon-fuel:before { content: "\f10f"; }
+.flaticon-car-on-fire:before { content: "\f110"; }
+.flaticon-side-crash:before { content: "\f111"; }
+.flaticon-fire:before { content: "\f112"; }
+.flaticon-car:before { content: "\f113"; }
+.flaticon-airplane-shape:before { content: "\f114"; }
+.flaticon-recycling-symbol:before { content: "\f115"; }
+.flaticon-seeding:before { content: "\f116"; }
+.flaticon-pie-chart:before { content: "\f117"; }
+.flaticon-dollar-sign-and-piles-of-coins:before { content: "\f118"; }
+.flaticon-graphic:before { content: "\f119"; }
+.flaticon-money-bag-with-dollar-symbol:before { content: "\f11a"; }
+.flaticon-give-money:before { content: "\f11b"; }
+.flaticon-judge:before { content: "\f11c"; }
+.flaticon-lawyer:before { content: "\f11d"; }
+.flaticon-magistrate-with-hammer:before { content: "\f11e"; }
+.flaticon-business-1:before { content: "\f11f"; }
+.flaticon-jury:before { content: "\f120"; }
+.flaticon-tool:before { content: "\f121"; }
+.flaticon-business:before { content: "\f122"; }
+.flaticon-family-group:before { content: "\f123"; }
+.flaticon-family-of-three:before { content: "\f124"; }
+.flaticon-mallet:before { content: "\f125"; }
+.flaticon-task-complete:before { content: "\f126"; }
+.flaticon-security-camera:before { content: "\f127"; }
+.flaticon-office-briefcase-1:before { content: "\f128"; }
+.flaticon-bank-building-1:before { content: "\f129"; }
+.flaticon-folder:before { content: "\f12a"; }
+.flaticon-office-briefcase:before { content: "\f12b"; }
+.flaticon-shapes:before { content: "\f12c"; }
+.flaticon-thief:before { content: "\f12d"; }
+.flaticon-shopping-zone-marker:before { content: "\f12e"; }
+.flaticon-flag:before { content: "\f12f"; }
+.flaticon-woods-marker:before { content: "\f130"; }
+.flaticon-courthouse:before { content: "\f131"; }
+.flaticon-legal-hammer:before { content: "\f132"; }
+.flaticon-law:before { content: "\f133"; }
+.flaticon-balance-1:before { content: "\f134"; }
+.flaticon-telephone-of-old-design:before { content: "\f135"; }
+.flaticon-caution-sign:before { content: "\f136"; }
+.flaticon-male-consultant:before { content: "\f137"; }
+.flaticon-dislike:before { content: "\f138"; }
+.flaticon-city:before { content: "\f139"; }
+.flaticon-virus:before { content: "\f13a"; }
+.flaticon-money:before { content: "\f13b"; }
+.flaticon-robbery:before { content: "\f13c"; }
+.flaticon-location:before { content: "\f13d"; }
+.flaticon-at:before { content: "\f13e"; }
+.flaticon-people:before { content: "\f13f"; }
+.flaticon-post-it:before { content: "\f140"; }
+.flaticon-author-sign:before { content: "\f141"; }
+.flaticon-kids-couple:before { content: "\f142"; }
+.flaticon-line-chart:before { content: "\f143"; }
+.flaticon-factory-building:before { content: "\f144"; }
+.flaticon-smiling-emoticon-square-face:before { content: "\f145"; }
+.flaticon-project-manager:before { content: "\f146"; }
+.flaticon-cells:before { content: "\f147"; }
+.flaticon-customer:before { content: "\f148"; }
+.flaticon-family:before { content: "\f149"; }
+.flaticon-hearts:before { content: "\f14a"; }
+.flaticon-criminal-wearing-eye-piece-and-striped-top:before { content: "\f14b"; }
+.flaticon-criminal-in-jail-silhouette:before { content: "\f14c"; }
+.flaticon-car-collision:before { content: "\f14d"; }
+.flaticon-honor-band-mention:before { content: "\f14e"; }
+.flaticon-balance:before { content: "\f14f"; }
+.flaticon-prize-badge-with-star-and-ribbon:before { content: "\f150"; }
+.flaticon-boy-face:before { content: "\f151"; }
+.flaticon-pregnancy:before { content: "\f152"; }
+.flaticon-bank-building:before { content: "\f153"; }
+.flaticon-online-store:before { content: "\f154"; }
+.flaticon-money-laundering:before { content: "\f155"; }
+.flaticon-criminal-hand-print-silhouette:before { content: "\f156"; }
+.flaticon-team-success:before { content: "\f157"; }
+.flaticon-briefcase-and-document:before { content: "\f158"; }
+.flaticon-manager-avatar:before { content: "\f159"; }
+.flaticon-group:before { content: "\f15a"; }
+.flaticon-auction:before { content: "\f15b"; }
+.flaticon-home:before { content: "\f15c"; }
+.flaticon-accident:before { content: "\f15d"; }

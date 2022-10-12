@@ -1,0 +1,17 @@
+#FallbackResource for URL rewriting for Apache web server. Necessary for phpRegister:
+ErrorDocument 404 /url_rewriting.php
+
+
+# Images cache
+<FilesMatch "\.(jpg|jpeg|png|gif)$">
+Header set Cache-Control "max-age=6048000, public"
+</FilesMatch>
+
+# JS / CSS cache
+<FilesMatch "\.(js|css)$">
+Header set Cache-Control "max-age=25920000"
+</FilesMatch>
+
+<filesmatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</filesmatch>

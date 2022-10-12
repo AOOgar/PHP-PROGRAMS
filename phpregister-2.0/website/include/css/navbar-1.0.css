@@ -1,0 +1,319 @@
+#NavbarPC {
+    display:inline-block;
+    background:#005f85;
+    width:100%;
+    color:white;
+}
+#NavbarTopMenuLang {
+    max-width:1100px;
+}
+#NavbarTopMenuLang > div {
+    line-height:30px; 
+}
+#DivDropDownLangTop > .dropdown-toggle > img {
+    margin-top:-2px;
+}
+#DivDropDownLangTop .dropdown-menu {
+    padding:20px;
+    width:200px;
+    border-radius:0px;
+    border:1px solid #005f85;
+    border-top:none;
+    margin-left:-50px;
+    margin-top:6px;
+}
+#DivDropDownLangTop > .dropdown-menu img {
+    margin-top:-2px;
+    margin-right:10px;
+}
+#NavbarTopMainPages {
+    background: #0089c0;
+}
+#DivTopMainPages ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#DivTopMainPages ul > li {
+    display: flex;
+    position: relative;
+    align-items: center;
+    line-height: 24px;
+    height: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-top:46px;
+}
+
+#DivTopMainPages a {
+    color: #ffffff;
+    font-size: 16px;
+}
+#DivTopMainPages ul > li > a::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 51%;
+    right: 51%;
+    bottom: -10px;
+    background: #ffffff;
+    height: 3px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+#DivTopMainPages ul > li > a.no-underline::after{
+    background:transparent;
+}
+
+#DivTopMainPages ul > li a:hover::after,
+#DivTopMainPages ul > li > a:focus::after,
+#DivTopMainPages ul > li > a:active::after,
+#DivTopMainPages ul > li > a.active::after{left: 0; right: 0;}
+
+#DivDropDownAccount .dropdown-menu {
+    width:250px;
+    border-radius: 8px;
+    border:1px solid #0089c0 !important;
+    margin-top:10px;
+}
+#DivDropDownAccount ul {
+    padding: 10px;
+    margin: 0px;
+    list-style: none;
+}
+#DivDropDownAccount li {
+    padding: 10px;
+}
+#DivDropDownAccount a, #DivDropDownAccount a:hover {
+    color: #0089c0;
+    text-decoration: none;
+}
+.text-admin {
+    color: #6b6b6b;
+    border-top: 1px solid #ddd;
+}
+#DivDropDownAccount ul li i {
+    color: #005f85;
+    margin-right:10px;
+    font-size:23px;
+}
+
+#NavbarPhone {
+    position:fixed;
+    top:0;
+    height: 57px;
+    width: 100%;
+    background:#0089c0;
+    z-index: 900;
+}
+
+#MenuPhoneMainPages, #MenuPhoneUser {
+    background: #005f85;
+    margin: auto;
+    top: 57px; /* Same as Height of #NavbarPhone */
+    left:-1000px;
+    position: fixed;
+    width:80%;
+    min-width:289px;
+    padding-bottom:100px;
+    z-index: 900;
+    height:100%;
+    overflow-y: scroll;
+    margin-left:0px;
+    transition: left .5s ease-in-out;
+}
+#MenuPhoneUser .text-admin {
+    color: #ddd;
+    border-top: none;
+}
+#MenuPhoneUser {
+    width:100%;
+}
+#MenuPhoneMainPages ul, #MenuPhoneUser ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align:left;
+}
+#MenuPhoneMainPages ul li, #MenuPhoneUser ul li {
+    border-bottom: 1px dashed #ddd;
+    padding: 16px 30px;
+}
+#MenuPhoneMainPages ul li a, #MenuPhoneUser ul li {
+    color:white;
+}
+#MenuPhoneUser ul li i {
+    margin-right:20px;
+}
+#MenuPhoneUser ul li a {
+    color: white;
+    text-decoration: none;
+}
+#MenuPhoneUser .fa {
+    font-size: 24px;
+}
+
+#DivSail {
+    position: fixed;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    background: rgba(51,51,51,0);
+    z-index: 890;
+    transition: background .5s ease-out;
+}
+#DivSail.show {
+    width: 100%;
+    height: 100%;
+}
+
+/**
+ * FOOTER
+ * Footer goes automaticaly to the bottom thanks to d-flex flex-column
+ * in DivWrapper first DIV of DOM and with mt-auto in <footer> class
+ */
+footer {
+    width: 100%;
+    color:#fff;
+    background: #005f85;
+    font-size:16px;
+    padding-bottom:10px;
+}
+footer .footer-title, footer i {
+    color: #fff;
+}
+footer .footer-title {
+    font-weight: 700;
+    padding:2px 10px;
+    border-bottom: 1px solid #999aa7;
+    margin:10px 0px;
+    color: #999aa7;
+}
+footer .footer-bloc {
+    margin: 0 auto;
+}
+footer a, footer a:visited, footer a:active {
+    color: #fff;
+    text-decoration:none;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration:underline;
+}
+footer .footer-div {
+    padding: 2px 10px;
+}
+
+@media only screen and (max-width : 769px) {
+    footer footer-bloc {
+        margin: 0 0;
+    }
+    footer a {
+        font-size:18px;
+    }
+    footer .footer-div, footer .footer-title {
+        padding-left: 20px;
+    }
+    footer .footer-title {
+        padding-top: 30px;
+    }
+}
+/* End Footer */
+
+
+/**
+ * Phone Navbar Hamburger
+ */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 0.9b; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: #fff; }
+
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -8px; }
+  .hamburger-inner::after {
+    bottom: -8px; }
+
+/*
+   * 3DX
+   */
+.hamburger--3dx .hamburger-box {
+  perspective: 80px; }
+
+.hamburger--3dx .hamburger-inner {
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .hamburger--3dx .hamburger-inner::before, .hamburger--3dx .hamburger-inner::after {
+    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.hamburger--3dx.is-active .hamburger-inner {
+  background-color: transparent !important;
+  transform: rotateY(180deg); }
+  .hamburger--3dx.is-active .hamburger-inner::before {
+    transform: translate3d(0, 8px, 0) rotate(45deg); }
+  .hamburger--3dx.is-active .hamburger-inner::after {
+    transform: translate3d(0, -8px, 0) rotate(-45deg); }
+
+/*
+   * 3DX Reverse
+   */
+.hamburger--3dx-r .hamburger-box {
+  perspective: 80px; }
+
+.hamburger--3dx-r .hamburger-inner {
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .hamburger--3dx-r .hamburger-inner::before, .hamburger--3dx-r .hamburger-inner::after {
+    transition: transform 0s 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.hamburger--3dx-r.is-active .hamburger-inner {
+  background-color: transparent !important;
+  transform: rotateY(-180deg); }
+  .hamburger--3dx-r.is-active .hamburger-inner::before {
+    transform: translate3d(0, 8px, 0) rotate(45deg); }
+  .hamburger--3dx-r.is-active .hamburger-inner::after {
+    transform: translate3d(0, -8px, 0) rotate(-45deg); }

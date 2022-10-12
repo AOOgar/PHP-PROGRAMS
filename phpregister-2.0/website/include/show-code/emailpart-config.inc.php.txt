@@ -1,0 +1,5 @@
+/**
+ * Default email sender for transactional emails
+ */
+$config['EmailContact'] = 'contact@yourwebsite.com';
+$config['EmailContactName'] = 'YourWebsiteName';

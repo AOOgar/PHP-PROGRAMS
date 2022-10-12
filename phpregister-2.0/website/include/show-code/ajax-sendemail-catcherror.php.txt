@@ -1,0 +1,14 @@
+$catchError = email_send();
+
+echo '
+<div id="DivAjaxEmail">';
+if($catchError == '') {
+    // if `$_POST['SelectLang']` is NULL, then the language display will be the user lang.
+    // The 3rd argument is `TRUE` to show a clickable Translate Id.
+    echo '
+    <span class="text-success font-weight-bold">'.lg('Email sent!', 'Admin', TRUE, $_POST['SelectLang']).'</span>';
+
+} else {
+    echo '
+    <span class="text-danger">Error sending email</span>: '.$catchError;
+}

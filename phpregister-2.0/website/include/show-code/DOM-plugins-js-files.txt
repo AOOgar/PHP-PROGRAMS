@@ -1,0 +1,3 @@
+<!-- JS Plugins -->
+<script src="https://yourwebsite.com/include/plugins/js/prism.js" ></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" ></script>

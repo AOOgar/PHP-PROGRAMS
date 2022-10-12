@@ -1,0 +1,17 @@
+/* Require of global_cookies PHP file to get the Lang of current user */
+require_once (_PATHROOT.'include/php/global_cookies.inc.php');
+
+/* Require of global_email to initialize PHPMailer and Html2Text to send emails */
+require_once (_PATHROOT.'include/php/emails/global_email.inc.php');
+
+/* We initialize the language variables of pages 'Log in', 'Signup', 'Admin', 'Global'.
+ * For performance reason, in the `else` we don't initialize language variables in
+ * all languages but in only the Selected lang. For sending emails in any language,
+ * initialize language variables in all languages, example:
+   init_langVars(['Log in', 'Signup', 'Admin', 'Global'], ['en', 'fr', 'es']);
+ */
+if($_POST['SelectLang'] == NULL) {
+    init_langVars(['Log in', 'Signup', 'Admin', 'Global']);
+} else {
+    init_langVars(['Log in', 'Signup', 'Admin', 'Global'], [$_POST['SelectLang']]);
+}

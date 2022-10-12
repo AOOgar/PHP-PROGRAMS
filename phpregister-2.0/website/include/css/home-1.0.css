@@ -1,0 +1,12 @@
+ul.features {
+    list-style-type: none;
+    
+}
+ul.features li {
+    padding: 7px 10px;
+}
+ul.features li:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -25px;
+}

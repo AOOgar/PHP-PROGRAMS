@@ -1,0 +1,2 @@
+DirectoryIndex index.php index.html
+ErrorDocument 404 http://localhost/jconnectorz/404.php

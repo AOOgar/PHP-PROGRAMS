@@ -1,0 +1,12 @@
+/**
+ * Example of a company providing 
+ * transactional email delivery and management service
+*/
+  
+$configEmail['isSMTP'] = TRUE;
+$configEmail['Host'] = 'smtp.your_host.com';
+$configEmail['SMTPAuth'] = TRUE;
+$configEmail['Username'] = 'username';
+$configEmail['Password'] = 'password';
+$configEmail['Port'] = 587;
+$configEmail['SMTPSecure'] = 'tls';

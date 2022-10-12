@@ -1,0 +1,16 @@
+/**
+ * Check if user created is the first user to add it Admin rights
+ * This check can be removed once the first user has been created
+ */
+$sql = $dataBase->prepare('SELECT COUNT(id) AS num FROM pr__user');
+$sql->execute();
+$countUsers = $sql->fetch()['num'];
+if($countUsers == 1) {
+    $sql = $dataBase->prepare('INSERT INTO pr__user_adminright(user_id, adminright_id) VALUES (:user_id, :adminright_id)');
+    $sql->execute(['user_id'        => $userId,
+                   'adminright_id'  => 1]);
+    $sql->closeCursor();
+    $sql = $dataBase->prepare('INSERT INTO pr__user_adminprefs(user_id) VALUES(:user_id)');
+    $sql->execute(['user_id' => $userId]);
+    $sql->closeCursor();
+}
